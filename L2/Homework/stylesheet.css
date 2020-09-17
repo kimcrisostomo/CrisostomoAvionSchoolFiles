@@ -4,54 +4,64 @@ body{
         background-repeat: no-repeat;
         background-attachment: fixed;
     }
+    
+.all
+    {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;      
+    }
+
+
 .divClass
     {
-        background-color: rgba(235, 235, 207, 0.712);
-        width: 500px;
-        margin: auto;
-        text-align: center;
+        background-color: rgba(244, 165, 96, 0.63);
+        width: 500px;  
+        border-style: dashed;
+        border-color: rgb(2, 74, 102);
+        border-width: 5px;   
     }    
+
     h1
         {
-            color: rgb(32, 155, 32);
-            text-align: center;
+            color: rgb(24, 124, 24); 
         }
     
 .food
     {
-        background-color: rgba(255, 127, 80, 0.651);
+        background-color:  rgba(244, 165, 96, 0.63);
         width: 500px;
         height: 230px;
-        margin: auto;
         margin-top: 30px;
         margin-bottom: 30px;
-        text-align: center;
         padding: auto;
+        border-style: dashed;
+        border-color: rgb(2, 74, 102);
+        border-width: 5px;
     }
 
     #spanId
         {
             font-size: 18px;
-            margin: 50px;
-            text-align: center;
+            margin: 50px;          
         }
         
 #thirdDiv
     {
-        background-color: sandybrown;
+        background-color: rgba(244, 165, 96, 0.63);
         height: 600px;
         width: 500px;
         border-style: dashed;
-        border-color: rgb(36, 41, 43);
+        border-color: rgb(2, 74, 102);
         border-width: 5px;
-        margin: auto;
         padding: 50px;
         }
 
 img
     {
         width: 400px;
-        height: 170px;
+        height: 180px;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: auto;
@@ -73,14 +83,16 @@ h2
     {
         text-align: center;
         border-style: double;
+        font-size: 20px;
     }
 
 a
     {
         color: navy;
+        text-decoration: none;
     }
 
 a:hover
     {
-        color: orangered
+        color: rgb(140, 0, 255)
     }
