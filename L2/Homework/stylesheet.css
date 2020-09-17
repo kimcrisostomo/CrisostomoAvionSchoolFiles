@@ -56,11 +56,12 @@ img
         margin-bottom: auto;
         border-style: double;
         display: block;
+        opacity: 0.8;
     }
 
 img:hover
     {
-        opacity: 0.8;
+        opacity: 1;
     }
 
 h4
