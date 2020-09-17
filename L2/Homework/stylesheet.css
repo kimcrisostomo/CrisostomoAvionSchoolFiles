@@ -18,6 +18,8 @@ body{
     {
         background-color: rgba(244, 165, 96, 0.63);
         width: 500px;  
+        padding: auto;
+        margin: 50px;
         border-style: dashed;
         border-color: rgb(2, 74, 102);
         border-width: 5px;   
@@ -28,24 +30,11 @@ body{
             color: rgb(24, 124, 24); 
         }
     
-.food
+#spanId
     {
-        background-color:  rgba(244, 165, 96, 0.63);
-        width: 500px;
-        height: 230px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        padding: auto;
-        border-style: dashed;
-        border-color: rgb(2, 74, 102);
-        border-width: 5px;
+        font-size: 18px;
+        margin: 50px;          
     }
-
-    #spanId
-        {
-            font-size: 18px;
-            margin: 50px;          
-        }
         
 #thirdDiv
     {
