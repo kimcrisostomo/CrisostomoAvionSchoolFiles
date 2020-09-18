@@ -66,9 +66,9 @@ in this folder, you are in the wrong place.
 
 #exerciseSeven {
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 25% 25% 25% 25%;
-  justify-self: center;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+  justify-self: ;
 }
 
 #itemOne {
@@ -79,12 +79,18 @@ in this folder, you are in the wrong place.
 
 #itemTwo {
   flex-direction: column-reverse;
-  grid-row: 3;
-  grid-column: 3;
+  grid-row: 2;
+  grid-column: 4;
 }
 
 #itemThree {
   flex-direction: column-reverse;
   grid-row: 2;
+  grid-column: 2;
+}
+
+#itemFour {
+  flex-direction: column;
+  grid-row: 4;
   grid-column: 2;
 }
