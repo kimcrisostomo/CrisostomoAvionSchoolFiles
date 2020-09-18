@@ -68,7 +68,6 @@ in this folder, you are in the wrong place.
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
   grid-template-rows: 20% 20% 20% 20% 20%;
-  justify-self: ;
 }
 
 #itemOne {
