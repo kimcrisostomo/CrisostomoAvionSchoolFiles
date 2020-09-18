@@ -1,0 +1,90 @@
+/* 
+Lesson 3: CSS positioning homwork. All of your work should be done in this file. If you find yourself altering any of the other files 
+in this folder, you are in the wrong place. 
+*/
+
+
+/* Exercise One: Centering the text in a span */
+
+/* We will start this one off for you: */
+#exerciseOne {
+  display: block;
+  text-align: center;
+
+}
+
+
+/* Exercise Two: Positioning a Header Bar*/
+
+/* Place code here */
+#exerciseTwo {
+  visibility: hidden;
+  
+}
+
+
+
+/* Exercise Three: */
+
+/* Place code here */
+#exerciseThree {
+  position: relative;
+  top: 100px;
+  left: 200px;
+}
+
+
+
+/* Exercise Four: */
+
+/* Place code here */
+#exerciseFour {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+
+
+/* Exercise Five & Six*/
+
+/* Place code here */
+#exerciseFive {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#exerciseFive img{
+  height: 60px;
+  width: 150px;
+}
+
+
+
+/* Exercise Seven */
+
+#exerciseSeven {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 25% 25% 25% 25%;
+  justify-self: center;
+}
+
+#itemOne {
+  flex-direction: column;
+  grid-row: 4;
+  grid-column: 4;
+}
+
+#itemTwo {
+  flex-direction: column-reverse;
+  grid-row: 3;
+  grid-column: 3;
+}
+
+#itemThree {
+  flex-direction: column-reverse;
+  grid-row: 2;
+  grid-column: 2;
+}
