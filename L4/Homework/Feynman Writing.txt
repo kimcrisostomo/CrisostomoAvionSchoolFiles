@@ -1,0 +1,15 @@
+*Variables
+    - this is like the drawer that contains your hidden candies
+
+*Strings
+    - this is the candy that is in your drawer
+
+*Functions
+    - this is like a chore list. This is where you put what is needed to be done.
+
+*'if' statements
+    - these show if what you did is correct or incorrect.
+
+*Boolean values
+    - this is when you do something that is either right or wrong.
+
