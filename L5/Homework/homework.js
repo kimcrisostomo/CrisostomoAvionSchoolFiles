@@ -8,7 +8,7 @@ function getBiggest(x, y) {
     return x;
   } else {
     return y;
-}
+  }
 }
 
 function greeting(language) {
@@ -17,39 +17,36 @@ function greeting(language) {
   // language: 'Mandarin' -> 'Ni Hao!'
   // language: 'Spanish' -> 'Hola!'
   // if language is undefined return 'Hello!'
-  var x = "";
-  if ( x === "German") {
+  if ( language === "German") {
     return "Guten Tag!"
   }
-  else if ( x=== "Mandarin") {
+  else if ( language === "Mandarin") {
     return "Ni Hao!"
   }
-  else if (x === "Spanish") {
+  else if (language === "Spanish") {
     return "Hola!"
   }
   else {
     return "Hello!"
   }
 }
-console.log(greeting('language'))
+console.log(greeting(''))
 
 function isTenOrFive(num) {
   // return true if num is 10 or 5
   // otherwise return false
-  if (x === 10 || x === 5) {
+  if (num === 10 || num === 5) {
     return "true";
   }
   else {
     return "false";
   }
 }
-var x = 10;
-console.log(isTenOrFive('num'))
+console.log(isTenOrFive(6))
 
 function isInRange(num) {
   // return true if num is less than 50 and greater than 20
   // otherwise return false
-  var x = 45;
   if (x > 20 && x < 50) {
     return true;
   }
@@ -57,7 +54,7 @@ function isInRange(num) {
     return false;
   }
 }
-console.log(isInRange('num'))
+console.log(isInRange(45))
 
 function isInteger(num) {
   // return true if num is an integer
@@ -66,7 +63,6 @@ function isInteger(num) {
   // -10 -> true
   // otherwise return false
   // hint: you can solve this using Math.floor
-  var num = -12;
   if (num === (Math.floor(num))) {
     return true;
   }
@@ -74,14 +70,13 @@ function isInteger(num) {
     return false;
   }
 }
-console.log(isInteger('num'))
+console.log(isInteger(12.5))
 
 function fizzBuzz(num) {
   // if num is divisible by 3 return 'fizz'
   // if num is divisible by 5 return 'buzz'
   // if num is divisible by 3 & 5 return 'fizzbuzz'
   // otherwise return num
-  var num = 10;
   if (num % 3==0 && num % 5==0) {
     return "fizzbuzz";
   }
@@ -95,7 +90,7 @@ function fizzBuzz(num) {
     return num;
   }
 }
-console.log(fizzBuzz('num'))
+console.log(fizzBuzz(15))
 
 function isPrime(num) {
   // return true if num is prime.
@@ -103,27 +98,22 @@ function isPrime(num) {
   // hint: a prime number is only evenly divisible by itself and 1
   // hint2: you can solve this using a for loop
   // note: 0 and 1 are NOT considered prime numbers
-  var num = 9 ;
-  if (num===1)
-{
-  return false;
-}
-else if(num === 2)
-{
-  return true;
-} else
-{
-  for(var i = 2; i < num; i++)
-  {
-    if(num % i === 0)
-    {
-      return false;
-    }
+  if (num===1) {
+    return false;
   }
+  else if(num === 2) {
+    return true;
+  } 
+  else {
+    for(var i = 2; i < num; i++) {
+      if(num % i === 0) {
+        return false;
+      }
+    }
   return true;
+  }
 }
-}
-console.log(isPrime('num'))
+console.log(isPrime(3))
 
 // Do not modify code below this line.
 // --------------------------------

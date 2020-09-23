@@ -40,7 +40,7 @@ function add(x, y) {
   var y = 3;
   return z = x + y;
 }
-console.log(add("x, y"));
+console.log(add(2,5));
 
 
 function subtract(x, y) {
@@ -50,53 +50,46 @@ function subtract(x, y) {
   var y = 3;
   return z = x - y;
 }
-console.log(subtract("x, y"));
+console.log(subtract(9,5));
 
 function multiply(x, y) {
   // multiply x by y and return the value
   // code here
-  var x = 5;
-  var y = 3;
   return z = x * y;
 }
-console.log(multiply("x, y"));
+console.log(multiply(4,5));
 
 function divide(x, y) {
   // divide x by y and return the value
   // code here
-  var x = 9;
-  var y = 3;
   return z = x / y;
 }
-console.log(divide('x, y'));
+console.log(divide(9,3));
 
 function areEqual(x, y) {
   // return true if x and y are the same
   // otherwise return false
   // code here
-    var x = 4;
-    var y = 4;
     if (x==y){
-    return True;
+      return 'True';
     }
-    return false;
+      return 'false';
   }
-  console.log(areEqual("x, y"));
+  console.log(areEqual(5,6));
 
 
 function areSameLength(str1, str2) {
   // return true if the two strings have the same length
   // otherwise return false
   // code here
-var str1 = 'ABCDEFGHIJKLMNOPQRYZ';
-  var sln1 = str1.length;
-var str2 = 'vcxqwebfytujMNOPvRYZ';
-  var sln2 = str2.length;
-
-  if (sln1==sln2){
-    return true;
-  }
-  return false;
+  var str1 = 'ABCDEFGHIJKLMNOPQRYZ';
+    var sln1 = str1.length;
+  var str2 = 'vcxqwebfytujMNOPvRYZ';
+    var sln2 = str2.length;
+    if (sln1==sln2){
+      return true;
+    }
+    return false;
 }
 console.log(areSameLength("str1, str2"))
 
@@ -105,121 +98,104 @@ function lessThanNinety(num) {
   // return true if the function argument: num , is less than ninety
   // otherwise return false
   // code here
-  var num = 150
   if (num<90){
     return true;
   }
     return false;
 }
-console.log(lessThanNinety("num"))
+console.log(lessThanNinety(150))
 
 function greaterThanFifty(num) {
   // return true if num is greater than fifty
   // otherwise return false
   // code here
-  var num = 10
   if (num>50){
     return true;
   }
     return false;
 }
-console.log(greaterThanFifty("num"))
+console.log(greaterThanFifty(10))
 
 function getRemainder(x, y) {
   // return the remainder from dividing x by y
   // code here
-  var x = 25;
-  var y = 7;
-  return z = x % y;
+  return x % y;
 }
-console.log(getRemainder('x, y'))
+console.log(getRemainder(25,7))
 
 function isEven(num) {
   // return true if num is even
   // otherwise return false
   // code here
-  var x = 127;
-  if (x % 2 === 0) {
+  if (num % 2 === 0) {
     return true;
   }
     return false;
 }
-console.log(isEven('num'))
+console.log(isEven(127))
 
 function isOdd(num) {
   // return true if num is odd
   // otherwise return false
   // code here
-   var x = 17;
-  if (x % 2 != 0) {
+  if (num % 2 != 0) {
     return true;
   }
     return false;
 }
-console.log(isOdd('num'))
+console.log(isOdd(17))
 
 function square(num) {
   // square num and return the new value
   // hint: NOT square root!
   // code here
-  var x = 5;
-  return (Math.pow(x,2));
+  return (Math.pow(num,2));
 }
-console.log(square('num'))
+console.log(square(5))
 
 function cube(num) {
   // cube num and return the new value
   // code here
-  var x = 5;
-  return (Math.pow(x,3));
+  return (Math.pow(num,3));
 }
-console.log(cube('num'))
+console.log(cube(5))
 
 function raiseToPower(num, exponent) {
   // raise num to whatever power is passed in as exponent
   // code here
-  var num = 2;
-  var exponent = 4;
   return (Math.pow(num,exponent));
 }
-console.log(raiseToPower('num, exponent'))
+console.log(raiseToPower(2,4))
 
 function roundNumber(num) {
   // round num and return it
   // code here
-  var num = 3.12;
-  var y = Math.round(num);
-  return y;
+  return Math.round(num);
 }
-console.log(roundNumber('num'))
+console.log(roundNumber(3.12))
 
 function roundUp(num) {
   // round num up and return it
   // code here
-  var num = 6.12;
-  var y = Math.ceil(num);
-  return y;
+  return Math.ceil(num);
 }
-console.log(roundUp('num'))
+console.log(roundUp(5.15))
 
 function addExclamationPoint(str) {
   // add an exclamation point to the end of str and return the new string
   // 'hello world' -> 'hello world!'
   // code here
-  var str = "hello world";
   return ((str) + "!")
 }
-console.log(addExclamationPoint('str'))
+console.log(addExclamationPoint('Hello world'))
 
 function combineNames(firstName, lastName) {
   // return firstName and lastName combined as one string and separated by a space.
   // 'Avion', 'School' -> 'Avion School'
   // code here
-  var firstName = "Avion ";
-  var lastName = "School";
   return ((firstName) + (lastName));
 }
-console.log(combineNames('firstName, lastName'))
+console.log(combineNames('Avion ','School'))
 
 function getGreeting(name) {
   // Take the name string and concatenate other strings onto it so it takes the following form:
@@ -229,8 +205,7 @@ function getGreeting(name) {
   var str2 = "Hello, ";
   var str3 = "have a nice day ";
   var str4 = "!";
-  var x = str2.concat(str3, str1, str4);
-  return x;
+    return str2.concat(str3, str1, str4);
 }
 console.log(getGreeting('name'))
 
@@ -240,20 +215,14 @@ console.log(getGreeting('name'))
 function getRectangleArea(length, width) {
   // return the area of the rectangle by using length and width
   // code here
-  var length = 7;
-  var width = 3; 
-  var output = length * width;
-  return output;
+  return length * width;
 }
-console.log(getRectangleArea('length, width'))
+console.log(getRectangleArea(7,3))
 
 function getTriangleArea(base, height) {
   // return the area of the triangle by using base and height
   // code here
-  var b = 3;
-  var h = 7;
-  var bh = b*h;
-  var area = bh/2;
-  return area;
+  var bh = base*height;
+  return bh/2;
 }
-console.log(getTriangleArea('base, height'))
+console.log(getTriangleArea(23,10))
