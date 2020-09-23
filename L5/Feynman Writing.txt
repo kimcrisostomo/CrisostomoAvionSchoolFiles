@@ -1,0 +1,6 @@
+	* `for` - this makes something do what you told them to do for a number of times.
+
+	* `&&`, `||`, `!`
+    && - and - this is you saying that both statements are true and you will do it.
+    || - or - this is you saying that one of two statements is true and you will do it.
+    ! - not - this is no.
