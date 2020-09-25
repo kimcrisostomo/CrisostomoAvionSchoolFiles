@@ -36,10 +36,10 @@ function isTenOrFive(num) {
   // return true if num is 10 or 5
   // otherwise return false
   if (num === 10 || num === 5) {
-    return "true";
+    return true;
   }
   else {
-    return "false";
+    return false;
   }
 }
 console.log(isTenOrFive(6))
@@ -47,7 +47,7 @@ console.log(isTenOrFive(6))
 function isInRange(num) {
   // return true if num is less than 50 and greater than 20
   // otherwise return false
-  if (x > 20 && x < 50) {
+  if (num > 20 && num < 50) {
     return true;
   }
   else {
@@ -113,7 +113,7 @@ function isPrime(num) {
   return true;
   }
 }
-console.log(isPrime(3))
+console.log(isPrime(7))
 
 // Do not modify code below this line.
 // --------------------------------
