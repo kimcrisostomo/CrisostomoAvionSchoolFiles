@@ -1,0 +1,2 @@
+* Arrays
+    - This is like the candy basket that you use to collect all your halloween candies.
