@@ -24,7 +24,12 @@ function incrementByOne(arr) {
   // arr is an array of integers  
   // increase each integer by one
   // return the array
+  for (let i = 0; i < arr.length; i++) {
+    arr[i]=arr[i]+1;
+  }
+  return arr;
 }
+console.log(incrementByOne([12,13,14,15]));
 
 function addItemToArray(arr, item) {
   // add the item to the end of the array
@@ -49,13 +54,9 @@ function wordsToSentence(words) {
   // return a string that is all of the words concatenated together
   // spaces need to be between each word
   // example: ['Hello', 'world!'] -> 'Hello world!'
-  let arr1 = ["Kim", "Crisostomo."];
-  let arr2 = ["I", "play"];
-  let arr3 = ["I", "am"];
-  let arr4 = ["Valorant", "as", "Sage", "main!"];
-  return words = arr3.concat(arr1,arr2,arr4).join(' ');
+  return words = words.join(' ');
 }
-console.log(wordsToSentence('words'))
+console.log(wordsToSentence(["I", "am", "a", "Sage", "main", "in", "Valorant!"]))
 
 function contains(arr, item) {
   if (arr.includes(item, 0)) {
@@ -72,24 +73,24 @@ function addNumbers(numbers) {
   // numbers is an array of integers.
   // add all of the integers and return the value
   let sum = 0
-    for (let i = 0; i < arguments.length; i++) {
-      sum = sum + arguments[i];
+    for (let i = 0; i < numbers.length; i++) {
+      sum = sum + numbers[i];
     }
   return sum;
 }
 
-console.log(addNumbers(1, 2, 3, 4 ,5))
+console.log(addNumbers([10,10,16]))
 
 function averageTestScore(testScores) {
   // testScores is an array.  Iterate over testScores and compute the average.
   // return the average
   let sum = 0
-    for (let i = 0; i < arguments.length; i++) {
-      sum = sum + arguments[i];
+    for (let i = 0; i < testScores.length; i++) {
+      sum = sum + testScores[i];
     }
-  return sum/arguments.length;
+  return sum/testScores.length;
 }
-console.log(averageTestScore(1, 2, 3, 4 ,5))
+console.log(averageTestScore([1, 2, 3, 4 ,5]))
 
 function largestNumber(numbers) {
   // numbers is an array of integers
@@ -103,7 +104,22 @@ function multiplyArguments() {
   // use the arguments keyword to multiply all of the arguments together and return the product
   // if no arguments are passed in return 0
   // if one argument is passed in just return it
+  let product = 1;
+  if(arguments.length == 0){
+    return 0;}
+  
+  else if(arguments.length == 1){
+    return arguments[0];
+  }
+  
+  else{
+    for (let i=0; i < arguments.length; i++) {
+          product*= arguments[i];
+    }
+  return product;
+  }
 }
+console.log(multiplyArguments(21))
 
 // Do not modify code below this line.
 // --------------------------------
