@@ -6,8 +6,8 @@ function counter() {
   // newCounter(); // 1
   // newCounter(); // 2
   let counter = 0
-  return function() {
-    counter += 1
+    return function() {
+  counter += 1
     return(counter)
   }
 }
