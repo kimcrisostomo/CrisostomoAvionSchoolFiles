@@ -31,6 +31,7 @@ return newObj;
 }
 console.log(addProperty(1,2).x)
 
+
 function invokeMethod(object, method) {
   // method is a string that contains the name of a method on the object
   // invoke this method
@@ -57,6 +58,7 @@ function multiplyMysteryNumberByFive(mysteryNumberObject) {
 }
 console.log(multiplyMysteryNumberByFive(999).product)
 
+
 function deleteProperty(object, property) {
   // remove the property from the object
   // return the object
@@ -72,6 +74,7 @@ console.log(deleteProperty().y)
 console.log(deleteProperty().x)
 console.log(deleteProperty().z)
 
+
 function newUser(name, email, password) {
   // create a new object with properties matching the arguments passed in.
   // return the new object
@@ -84,56 +87,65 @@ function newUser(name, email, password) {
 }
 console.log(newUser("kim","kim@kim.com","k232k").name)
 
+
 function hasEmail(user) {
   // return true if the user has a value for the property 'email'
   // otherwise return false
-  let newUser = {
-    name: "kim",
-    email: "kim@kim.com",
-    meron: function() {
-      if (('email' in newUser === true)) {
-        return true;
-      }
+  let hasEmail = 'email' in user;
+    if (hasEmail === true) {
+      if (user.email != null) {
+        return true; }
       else {
-        return false;
-      }
+        return false; }
     }
-  };
-  return newUser;
+    else {
+      return false; }
 }
-console.log(hasEmail().meron())
 
 
 function hasProperty(object, property) {
   // return true if the object has the value of the property argument
   // property is a string
   // otherwise return false
+  for (let key in object) {
+    if (object.hasOwnProperty(property) === true) {
+      return true; 
+    }
+    else {
+      return false;
+    }
+  }
 }
 
-
-function verifyPassword(user, password) {
-  // check to see if the provided password matches the password property on the user object
-  // return true if they match
-  // otherwise return false
-}
 
 function updatePassword(user, newPassword) {
   // replace the existing password on the user object with the value of newPassword
   // return the object
+  user.password = newPassword;
+  return user;
 }
+
 
 function addFriend(user, newFriend) {
   // user has a property called friends that is an array
   // add newFriend to the end of the friends array
   // return the user object
+  user.friends.push(newFriend);
+  return user;
 }
+
 
 function setUsersToPremium(users) {
   // users is an array of user objects.
   // each user object has the property 'isPremium'
   // set each user's isPremium property to true
   // return the users array
+  for(let key in users) {
+    users[key].isPremium = true;
+  }
+  return users;
 }
+
 
 function sumUserPostLikes(user) {
   // user has an array property called 'posts'
@@ -141,7 +153,13 @@ function sumUserPostLikes(user) {
   // each post object has an integer property called 'likes'
   // sum together the likes from all the post objects
   // return the sum
+  let sum = 0;
+  for(let key in user.posts) {
+    sum = sum + user.posts[key].likes;
+    }
+  return sum;
 }
+
 
 function addCalculateDiscountPriceMethod(storeItem) {
   // add a method to the storeItem object called 'calculateDiscountPrice'
@@ -152,7 +170,19 @@ function addCalculateDiscountPriceMethod(storeItem) {
   // price -> 20
   // discountPercentage -> .2
   // discountPrice = 20 - (20 * .2)
+  /*let storeItem = calculateDiscountPrice {
+    discount = price * discountPercentage;
+    discountPrice = price - discount;
+    return discountPrice;
+  }*/
+  storeItem.calculateDiscountPrice = function() {
+    let discountPrice = 0;
+    discountPrice = this.price - (this.price * this.discountPercentage);
+      return discountPrice;
+  }
+    return storeItem;
 }
+
 
 module.exports = {
   makeCat,
